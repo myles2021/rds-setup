@@ -31,7 +31,7 @@ resource "aws_db_instance" "cd_rds_db" {
 
   # Additional settings for production use, maintenance window and automated backups every week 
   backup_retention_period = 7
-  backup_window           = "02:00"
+  backup_window           = "02:00-03:00"
   maintenance_window      = "sun:04:00-sun:05:00"
 }
 
